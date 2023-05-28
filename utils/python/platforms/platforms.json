@@ -1,0 +1,62 @@
+[
+  {
+    "name": "платформа №1",
+    "manufacturer": "Sony",
+    "release_date": 2000,
+    "description": "Описание платформы №1"
+  },
+  {
+    "name": "платформа №2",
+    "manufacturer": "Microsoft",
+    "release_date": 2013,
+    "description": "Описание платформы №2"
+  },
+  {
+    "name": "платформа №3",
+    "manufacturer": "Nintendo",
+    "release_date": 1997,
+    "description": "Описание платформы №3"
+  },
+  {
+    "name": "платформа №4",
+    "manufacturer": "Nintendo",
+    "release_date": 1989,
+    "description": "Описание платформы №4"
+  },
+  {
+    "name": "платформа №5",
+    "manufacturer": "Sony",
+    "release_date": 2021,
+    "description": "Описание платформы №5"
+  },
+  {
+    "name": "платформа №6",
+    "manufacturer": "Nintendo",
+    "release_date": 2021,
+    "description": "Описание платформы №6"
+  },
+  {
+    "name": "платформа №7",
+    "manufacturer": "Sony",
+    "release_date": 2017,
+    "description": "Описание платформы №7"
+  },
+  {
+    "name": "платформа №8",
+    "manufacturer": "Sony",
+    "release_date": 2006,
+    "description": "Описание платформы №8"
+  },
+  {
+    "name": "платформа №9",
+    "manufacturer": "Microsoft",
+    "release_date": 2008,
+    "description": "Описание платформы №9"
+  },
+  {
+    "name": "платформа №10",
+    "manufacturer": "Sony",
+    "release_date": 1988,
+    "description": "Описание платформы №10"
+  }
+]

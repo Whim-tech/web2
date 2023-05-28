@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+</head>
+
+
+<body>
+    <!-- Header -->
+    <header>
+
+        <nav class="navbar navbar-expand navbar-dark bg-dark">
+
+            <div class="container-md px-4 px-lg-5">
+
+                <!-- GameStore logo -->
+                <a class="navbar-brand " href="#!">
+                    <!-- <img src="https://cdn.icon-icons.com/icons2/1603/PNG/96/video-game-play-toad-mushroom-mario_108577.png" width="30" height="30" class="d-inline-block align-top" alt=""> -->
+                    Game Store
+                </a>
+
+                <!-- Menu options -->
+                <div class="navbar-collapse " id="navbarSupportedContent">
+
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 d-none d-lg-flex">
+
+                        <li class="nav-item active">
+                            <a class="nav-link" aria-current="page" href="#">Home</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Catalog</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Genres</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Developers</a>
+                        </li>
+
+                    </ul>
+                </div>
+
+                <!-- Search -->
+
+                <form class="d-flex flex-row " method="get" action="#">
+
+                    <div class="input-group  ps-5 w-auto ">
+                        <input type="search" id="form1" class="form-control" aria-label="Search" placeholder="Search"
+                            name="q" />
+                        <button type="submit"
+                            class="btn btn-dark border d-flex align-items-center justify-content-center">
+
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-search" viewBox="0 0 16 16">
+                                <path
+                                    d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
+                            </svg>
+
+                        </button>
+                    </div>
+
+                </form>
+
+            </div>
+        </nav>
+
+        <!-- <div class="p-5 text-center bg-image" style="
+          background-image: url('https://mdbcdn.b-cdn.net/img/new/slides/041.webp');
+          height: 200px; ">
+                <div class="mask rounded-pill w-auto"  style="background-color: rgba(0, 0, 0, 0.6);">
+    
+                    <div class="d-flex justify-content-center align-items-center h-100">
+                        <div class="text-white">
+                            <h1 class="mb-3">КАТАЛОГ КОМПЬЮТЕРНЫХ ИГР</h1>
+                            <h4 class="mb-3">GAME STORE</h4>
+                        </div>
+                    </div>
+                </div>
+            </div> -->
+
+    </header>
+
+
+    <!-- Content -->
+    <section class="py-5">
+        <div class="container mt-2 ">
+
+            <div class="row">
+
+                <header class="mb-4 order-1">
+                    <!-- Post title-->
+                    <h1 class="fw-bolder mb-1">The Elder Scrolls V: Legendary Edition</h1>
+
+                    <!-- Post meta content-->
+                    <a class="text-muted  text-decoration-none mb-2 pe-3" href="#!">
+                        Bethesda Studio
+                    </a>
+
+                    <!-- Post categories-->
+                    <a class="badge bg-secondary text-decoration-none link-light" href="#!">РПГ</a>
+                    <a class="badge bg-secondary text-decoration-none link-light" href="#!">Песочница</a>
+                </header>
+
+                <div class="col-lg-8 col-md-8 order-3 order-lg-2 order-md-2">
+                    <!-- Post content-->
+                    <article>
+                        <!-- Post header Preview image figure-->
+
+                        <figure class="mb-4"><img class="img-fluid rounded"
+                                src="https://dummyimage.com/900x400/ced4da/6c757d.jpg" alt="..." /></figure>
+
+                        <!-- Post content-->
+                        <section class="mb-5">
+                            <h2 class="fw-bolder mb-4 mt-5">Legendary Edition</h2>
+                            <p class="fs-5 mb-4" style="text-align: justify;">Империя Тамриэла находится на грани
+                                падения. Король Скайрима убит.
+                                Претенденты на трон объединяются в союзы. В разгар конфликта
+                                пробуждается гораздо более опасное, древнее зло. Драконы, долгое время не появлявшиеся в
+                                летописях, вернулись в Тамриэл. Будущее Скайрима и всей
+                                Империи висит на волоске, все ждут предсказанного Драконорожденного, героя с силой
+                                Голоса, единственного, кто сможет противостоять драконам.</p>
+
+                            <h2 class="fw-bolder mb-4 mt-5">Dragonborn</h2>
+                            <p class="fs-5 mb-4" style="text-align: justify;">В этом официальном дополнении к игре The
+                                Elder Scrolls V: Skyrim вы
+                                покинете берега Морровинда и отправитесь на остров Солстхейм.
+                                В путешествии по пустошам и ледниковым долинам вас ждут новые города, подземелья и
+                                задания. Ваш герой станет еще сильнее: теперь Крики помогут укрощать
+                                врагов и даже приручать драконов. Но ваша судьба и судьба всего Солстхейма окажется на
+                                волоске, когда вы встретите вашего злейшего врага - первого
+                                Драконорожденного.</p>
+                            <h2 class="fw-bolder mb-4 mt-5">Dawnguard</h2>
+                            <p class="fs-5 mb-4" style="text-align: justify;">Лорд-вампир Харкон вернулся к власти.
+                                Используя Древние Свитки, он
+                                намерен сделать немыслимое - погасить само солнце.
+                                Присоединитесь ли вы к древнему ордену Стерегущих Рассвет, чтобы остановить его? Или
+                                сами станете Лордом-вампиром? В Dawnguard этот выбор
+                                остается за вами.</p>
+
+                            <h2 class="fw-bolder mb-4 mt-5">Hearthfire</h2>
+                            <p class="fs-5 mb-4" style="text-align: justify;">Это официальное дополнение для игры The
+                                Elder Scrolls V: Skyrim
+                                позволит купить участок земли и построить собственный дом.
+                                Начните с простой хижины и превратите ее в огромный особняк с оружейной, алхимической
+                                лабораторией, конюшней, садом и другими строениями.
+                                Новые инструменты - чертежный стол и верстак - помогут изготавливать мебель из камня,
+                                глины и дерева. Вы можете даже усыновить ребенка, и пустое
+                                жилище превратится в настоящий уютный дом.</p>
+                        </section>
+
+                    </article>
+
+                </div>
+
+                <!-- Side widgets-->
+                <div class="col-lg-4 col-md-4 order-2">
+
+
+                    <div class="card mb-4">
+                        <img class="card-img-top" src="https://dummyimage.com/440x220/ced4da/6c757d.png"
+                            alt="Card image cap">
+
+                        <div class="card-body">
+                            <h5 class="card-title fw-bolder">The Elder Scrools V</h5>
+                            <p class="card-text" style="text-align: justify;">Империя Тамриэла находится на грани
+                                падения. Король Скайрима убит. Претенденты на трон объединяются в союзы. В разгар
+                                конфликта пробуждается гораздо более опасное, древнее зло. </p>
+
+                        </div>
+
+                        <div class="card-body">
+                            <h5 class="card-title fw-bolder">Genre</h5>
+                            <div class="card-text" style="text-align: justify;"> <a
+                                    class="px-1 text-decoration-none link-blue" href="#!">РПГ</a>
+                                <a class="px-1 text-decoration-none link-blue" href="#!">Песочница</a>
+                                <a class="px-1 text-decoration-none link-blue" href="#!">MOBA</a>
+                            </div>
+                        </div>
+
+                        <div class="card-body">
+                            <h5 class="card-title fw-bolder">Developer</h5>
+                            <div class="card-text" style="text-align: justify;"> <a
+                                    class="px-1 text-decoration-none link-blue" href="#!">Bethesda studio</a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-4 bg-dark">
+        <div class="container">
+            <p class="m-0 text-center text-white">Copyright &copy; Game Store 2023</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+        crossorigin="anonymous"></script> -->
+</body>
+
+</body>
+
+</html>
