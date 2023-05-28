@@ -13,65 +13,49 @@
 <body>
     <!-- Header -->
     <header>
-
         <nav class="navbar navbar-expand navbar-dark bg-dark">
-
-            <div class="container-md px-4 px-lg-5">
+            <div class="container-md px-4 px-lg-5 ">
 
                 <!-- GameStore logo -->
-                <a class="navbar-brand " href="#!">
-                    <!-- <img src="https://cdn.icon-icons.com/icons2/1603/PNG/96/video-game-play-toad-mushroom-mario_108577.png" width="30" height="30" class="d-inline-block align-top" alt=""> -->
+                <a class="navbar-brand " href="/index.html">
                     Game Store
                 </a>
 
                 <!-- Menu options -->
                 <div class="navbar-collapse " id="navbarSupportedContent">
-
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0 d-none d-lg-flex">
-
                         <li class="nav-item active">
-                            <a class="nav-link" aria-current="page" href="#">Home</a>
+                            <a class="nav-link" aria-current="page" href="/index.html">Home</a>
                         </li>
-
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Catalog</a>
+                            <a class="nav-link" href="/catalog.html"> Catalog </a>
                         </li>
-
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Genres</a>
+                            <a class="nav-link" href="/catalog.html">Genres</a>
                         </li>
-
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Developers</a>
+                            <a class="nav-link" href="/catalog.html">Developers</a>
                         </li>
-
                     </ul>
                 </div>
 
                 <!-- Search -->
-
-                <form class="d-flex flex-row " method="get" action="#">
-
+                <form class="d-flex flex-row " method="get" action="/catalog.html">
                     <div class="input-group  ps-5 w-auto ">
                         <input type="search" id="form1" class="form-control" aria-label="Search" placeholder="Search"
                             name="q" />
                         <button type="submit"
                             class="btn btn-dark border d-flex align-items-center justify-content-center">
-
                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                                 class="bi bi-search" viewBox="0 0 16 16">
                                 <path
                                     d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
                             </svg>
-
                         </button>
                     </div>
-
                 </form>
-
             </div>
         </nav>
-
     </header>
 
     <!-- Content -->
@@ -84,16 +68,19 @@
         <div class="container-sm d-flex flex-row  justify-content-between mt-3 px-lg-5 px-4">
 
             <div class="dropdown d-none d-lg-flex d-md-flex">
-                <button class="btn btn-dark dropdown-toggle mx-1" type="button" id="dropdownMenuButton" aria-expanded="false">
-                  Жанры
+                <button class="btn btn-dark dropdown-toggle mx-1" type="button" id="dropdownMenuButton"
+                    aria-expanded="false">
+                    Жанры
                 </button>
-                <button class="btn btn-dark dropdown-toggle mx-1" type="button" id="dropdownMenuButton" aria-expanded="false">
+                <button class="btn btn-dark dropdown-toggle mx-1" type="button" id="dropdownMenuButton"
+                    aria-expanded="false">
                     Разработчики
                 </button>
-                <button class="btn btn-dark dropdown-toggle mx-1" type="button" id="dropdownMenuButton" aria-expanded="false">
+                <button class="btn btn-dark dropdown-toggle mx-1" type="button" id="dropdownMenuButton"
+                    aria-expanded="false">
                     Издатель
-                  </button>
-              </div>
+                </button>
+            </div>
 
             <form class="" method="get" action="#">
                 <div class="input-group  ps-5 w-auto">
@@ -111,11 +98,14 @@
             <div class="row gx-4 gx-lg-3 row-cols-2 row-cols-md-4 row-cols-xl-6 justify-content-center">
                 <div class="col mb-4 mb-lg-3">
                     <div class="card h-100">
-                        <img class="card-img-top" src="https://dummyimage.com/185x270/ced4da/6c757d.jpg"
-                            alt="..." />
+                        <a href="game.html">
+                            <img class="card-img-top" src="https://dummyimage.com/185x270/ced4da/6c757d.jpg"
+                                alt="Game Picture" />
+                        </a>
                         <div class="card-body p-2 pb-2">
                             <div class="text-center">
-                                <h5 class="card-title fw-bolder pb-0">Название игры</h5>
+                                <h5><a href="game.html" class="card-title fw-bolder pb-0 text-decoration-none">Название
+                                        игры</a></h5>
                                 <p class="card-text text-sm"><small class="text-muted">2013</small></p>
                             </div>
                         </div>
@@ -123,11 +113,14 @@
                 </div>
                 <div class="col mb-4 mb-lg-3">
                     <div class="card h-100">
-                        <img class="card-img-top" src="https://dummyimage.com/185x270/ced4da/6c757d.jpg"
-                            alt="..." />
+                        <a href="game.html">
+                            <img class="card-img-top" src="https://dummyimage.com/185x270/ced4da/6c757d.jpg"
+                                alt="Game Picture" />
+                        </a>
                         <div class="card-body p-2 pb-2">
                             <div class="text-center">
-                                <h5 class="card-title fw-bolder pb-0">Название игры</h5>
+                                <h5><a href="game.html" class="card-title fw-bolder pb-0 text-decoration-none">Название
+                                        игры</a></h5>
                                 <p class="card-text text-sm"><small class="text-muted">2013</small></p>
                             </div>
                         </div>
@@ -135,11 +128,14 @@
                 </div>
                 <div class="col mb-4 mb-lg-3">
                     <div class="card h-100">
-                        <img class="card-img-top" src="https://dummyimage.com/185x270/ced4da/6c757d.jpg"
-                            alt="..." />
+                        <a href="game.html">
+                            <img class="card-img-top" src="https://dummyimage.com/185x270/ced4da/6c757d.jpg"
+                                alt="Game Picture" />
+                        </a>
                         <div class="card-body p-2 pb-2">
                             <div class="text-center">
-                                <h5 class="card-title fw-bolder pb-0">Название игры</h5>
+                                <h5><a href="game.html" class="card-title fw-bolder pb-0 text-decoration-none">Название
+                                        игры</a></h5>
                                 <p class="card-text text-sm"><small class="text-muted">2013</small></p>
                             </div>
                         </div>
@@ -147,11 +143,14 @@
                 </div>
                 <div class="col mb-4 mb-lg-3">
                     <div class="card h-100">
-                        <img class="card-img-top" src="https://dummyimage.com/185x270/ced4da/6c757d.jpg"
-                            alt="..." />
+                        <a href="game.html">
+                            <img class="card-img-top" src="https://dummyimage.com/185x270/ced4da/6c757d.jpg"
+                                alt="Game Picture" />
+                        </a>
                         <div class="card-body p-2 pb-2">
                             <div class="text-center">
-                                <h5 class="card-title fw-bolder pb-0">Название игры</h5>
+                                <h5><a href="game.html" class="card-title fw-bolder pb-0 text-decoration-none">Название
+                                        игры</a></h5>
                                 <p class="card-text text-sm"><small class="text-muted">2013</small></p>
                             </div>
                         </div>
@@ -159,11 +158,14 @@
                 </div>
                 <div class="col mb-4 mb-lg-3">
                     <div class="card h-100">
-                        <img class="card-img-top" src="https://dummyimage.com/185x270/ced4da/6c757d.jpg"
-                            alt="..." />
+                        <a href="game.html">
+                            <img class="card-img-top" src="https://dummyimage.com/185x270/ced4da/6c757d.jpg"
+                                alt="Game Picture" />
+                        </a>
                         <div class="card-body p-2 pb-2">
                             <div class="text-center">
-                                <h5 class="card-title fw-bolder pb-0">Название игры</h5>
+                                <h5><a href="game.html" class="card-title fw-bolder pb-0 text-decoration-none">Название
+                                        игры</a></h5>
                                 <p class="card-text text-sm"><small class="text-muted">2013</small></p>
                             </div>
                         </div>
@@ -171,11 +173,14 @@
                 </div>
                 <div class="col mb-4 mb-lg-3">
                     <div class="card h-100">
-                        <img class="card-img-top" src="https://dummyimage.com/185x270/ced4da/6c757d.jpg"
-                            alt="..." />
+                        <a href="game.html">
+                            <img class="card-img-top" src="https://dummyimage.com/185x270/ced4da/6c757d.jpg"
+                                alt="Game Picture" />
+                        </a>
                         <div class="card-body p-2 pb-2">
                             <div class="text-center">
-                                <h5 class="card-title fw-bolder pb-0">Название игры</h5>
+                                <h5><a href="game.html" class="card-title fw-bolder pb-0 text-decoration-none">Название
+                                        игры</a></h5>
                                 <p class="card-text text-sm"><small class="text-muted">2013</small></p>
                             </div>
                         </div>
@@ -183,11 +188,14 @@
                 </div>
                 <div class="col mb-4 mb-lg-3">
                     <div class="card h-100">
-                        <img class="card-img-top" src="https://dummyimage.com/185x270/ced4da/6c757d.jpg"
-                            alt="..." />
+                        <a href="game.html">
+                            <img class="card-img-top" src="https://dummyimage.com/185x270/ced4da/6c757d.jpg"
+                                alt="Game Picture" />
+                        </a>
                         <div class="card-body p-2 pb-2">
                             <div class="text-center">
-                                <h5 class="card-title fw-bolder pb-0">Название игры</h5>
+                                <h5><a href="game.html" class="card-title fw-bolder pb-0 text-decoration-none">Название
+                                        игры</a></h5>
                                 <p class="card-text text-sm"><small class="text-muted">2013</small></p>
                             </div>
                         </div>
@@ -195,11 +203,14 @@
                 </div>
                 <div class="col mb-4 mb-lg-3">
                     <div class="card h-100">
-                        <img class="card-img-top" src="https://dummyimage.com/185x270/ced4da/6c757d.jpg"
-                            alt="..." />
+                        <a href="game.html">
+                            <img class="card-img-top" src="https://dummyimage.com/185x270/ced4da/6c757d.jpg"
+                                alt="Game Picture" />
+                        </a>
                         <div class="card-body p-2 pb-2">
                             <div class="text-center">
-                                <h5 class="card-title fw-bolder pb-0">Название игры</h5>
+                                <h5><a href="game.html" class="card-title fw-bolder pb-0 text-decoration-none">Название
+                                        игры</a></h5>
                                 <p class="card-text text-sm"><small class="text-muted">2013</small></p>
                             </div>
                         </div>
@@ -207,11 +218,14 @@
                 </div>
                 <div class="col mb-4 mb-lg-3">
                     <div class="card h-100">
-                        <img class="card-img-top" src="https://dummyimage.com/185x270/ced4da/6c757d.jpg"
-                            alt="..." />
+                        <a href="game.html">
+                            <img class="card-img-top" src="https://dummyimage.com/185x270/ced4da/6c757d.jpg"
+                                alt="Game Picture" />
+                        </a>
                         <div class="card-body p-2 pb-2">
                             <div class="text-center">
-                                <h5 class="card-title fw-bolder pb-0">Название игры</h5>
+                                <h5><a href="game.html" class="card-title fw-bolder pb-0 text-decoration-none">Название
+                                        игры</a></h5>
                                 <p class="card-text text-sm"><small class="text-muted">2013</small></p>
                             </div>
                         </div>
@@ -219,11 +233,14 @@
                 </div>
                 <div class="col mb-4 mb-lg-3">
                     <div class="card h-100">
-                        <img class="card-img-top" src="https://dummyimage.com/185x270/ced4da/6c757d.jpg"
-                            alt="..." />
+                        <a href="game.html">
+                            <img class="card-img-top" src="https://dummyimage.com/185x270/ced4da/6c757d.jpg"
+                                alt="Game Picture" />
+                        </a>
                         <div class="card-body p-2 pb-2">
                             <div class="text-center">
-                                <h5 class="card-title fw-bolder pb-0">Название игры</h5>
+                                <h5><a href="game.html" class="card-title fw-bolder pb-0 text-decoration-none">Название
+                                        игры</a></h5>
                                 <p class="card-text text-sm"><small class="text-muted">2013</small></p>
                             </div>
                         </div>
@@ -231,11 +248,14 @@
                 </div>
                 <div class="col mb-4 mb-lg-3">
                     <div class="card h-100">
-                        <img class="card-img-top" src="https://dummyimage.com/185x270/ced4da/6c757d.jpg"
-                            alt="..." />
+                        <a href="game.html">
+                            <img class="card-img-top" src="https://dummyimage.com/185x270/ced4da/6c757d.jpg"
+                                alt="Game Picture" />
+                        </a>
                         <div class="card-body p-2 pb-2">
                             <div class="text-center">
-                                <h5 class="card-title fw-bolder pb-0">Название игры</h5>
+                                <h5><a href="game.html" class="card-title fw-bolder pb-0 text-decoration-none">Название
+                                        игры</a></h5>
                                 <p class="card-text text-sm"><small class="text-muted">2013</small></p>
                             </div>
                         </div>
@@ -243,11 +263,14 @@
                 </div>
                 <div class="col mb-4 mb-lg-3">
                     <div class="card h-100">
-                        <img class="card-img-top" src="https://dummyimage.com/185x270/ced4da/6c757d.jpg"
-                            alt="..." />
+                        <a href="game.html">
+                            <img class="card-img-top" src="https://dummyimage.com/185x270/ced4da/6c757d.jpg"
+                                alt="Game Picture" />
+                        </a>
                         <div class="card-body p-2 pb-2">
                             <div class="text-center">
-                                <h5 class="card-title fw-bolder pb-0">Название игры</h5>
+                                <h5><a href="game.html" class="card-title fw-bolder pb-0 text-decoration-none">Название
+                                        игры</a></h5>
                                 <p class="card-text text-sm"><small class="text-muted">2013</small></p>
                             </div>
                         </div>
@@ -255,11 +278,14 @@
                 </div>
                 <div class="col mb-4 mb-lg-3">
                     <div class="card h-100">
-                        <img class="card-img-top" src="https://dummyimage.com/185x270/ced4da/6c757d.jpg"
-                            alt="..." />
+                        <a href="game.html">
+                            <img class="card-img-top" src="https://dummyimage.com/185x270/ced4da/6c757d.jpg"
+                                alt="Game Picture" />
+                        </a>
                         <div class="card-body p-2 pb-2">
                             <div class="text-center">
-                                <h5 class="card-title fw-bolder pb-0">Название игры</h5>
+                                <h5><a href="game.html" class="card-title fw-bolder pb-0 text-decoration-none">Название
+                                        игры</a></h5>
                                 <p class="card-text text-sm"><small class="text-muted">2013</small></p>
                             </div>
                         </div>
@@ -267,11 +293,14 @@
                 </div>
                 <div class="col mb-4 mb-lg-3">
                     <div class="card h-100">
-                        <img class="card-img-top" src="https://dummyimage.com/185x270/ced4da/6c757d.jpg"
-                            alt="..." />
+                        <a href="game.html">
+                            <img class="card-img-top" src="https://dummyimage.com/185x270/ced4da/6c757d.jpg"
+                                alt="Game Picture" />
+                        </a>
                         <div class="card-body p-2 pb-2">
                             <div class="text-center">
-                                <h5 class="card-title fw-bolder pb-0">Название игры</h5>
+                                <h5><a href="game.html" class="card-title fw-bolder pb-0 text-decoration-none">Название
+                                        игры</a></h5>
                                 <p class="card-text text-sm"><small class="text-muted">2013</small></p>
                             </div>
                         </div>
@@ -279,11 +308,14 @@
                 </div>
                 <div class="col mb-4 mb-lg-3">
                     <div class="card h-100">
-                        <img class="card-img-top" src="https://dummyimage.com/185x270/ced4da/6c757d.jpg"
-                            alt="..." />
+                        <a href="game.html">
+                            <img class="card-img-top" src="https://dummyimage.com/185x270/ced4da/6c757d.jpg"
+                                alt="Game Picture" />
+                        </a>
                         <div class="card-body p-2 pb-2">
                             <div class="text-center">
-                                <h5 class="card-title fw-bolder pb-0">Название игры</h5>
+                                <h5><a href="game.html" class="card-title fw-bolder pb-0 text-decoration-none">Название
+                                        игры</a></h5>
                                 <p class="card-text text-sm"><small class="text-muted">2013</small></p>
                             </div>
                         </div>
@@ -291,11 +323,14 @@
                 </div>
                 <div class="col mb-4 mb-lg-3">
                     <div class="card h-100">
-                        <img class="card-img-top" src="https://dummyimage.com/185x270/ced4da/6c757d.jpg"
-                            alt="..." />
+                        <a href="game.html">
+                            <img class="card-img-top" src="https://dummyimage.com/185x270/ced4da/6c757d.jpg"
+                                alt="Game Picture" />
+                        </a>
                         <div class="card-body p-2 pb-2">
                             <div class="text-center">
-                                <h5 class="card-title fw-bolder pb-0">Название игры</h5>
+                                <h5><a href="game.html" class="card-title fw-bolder pb-0 text-decoration-none">Название
+                                        игры</a></h5>
                                 <p class="card-text text-sm"><small class="text-muted">2013</small></p>
                             </div>
                         </div>
@@ -303,11 +338,14 @@
                 </div>
                 <div class="col mb-4 mb-lg-3">
                     <div class="card h-100">
-                        <img class="card-img-top" src="https://dummyimage.com/185x270/ced4da/6c757d.jpg"
-                            alt="..." />
+                        <a href="game.html">
+                            <img class="card-img-top" src="https://dummyimage.com/185x270/ced4da/6c757d.jpg"
+                                alt="Game Picture" />
+                        </a>
                         <div class="card-body p-2 pb-2">
                             <div class="text-center">
-                                <h5 class="card-title fw-bolder pb-0">Название игры</h5>
+                                <h5><a href="game.html" class="card-title fw-bolder pb-0 text-decoration-none">Название
+                                        игры</a></h5>
                                 <p class="card-text text-sm"><small class="text-muted">2013</small></p>
                             </div>
                         </div>
@@ -315,11 +353,14 @@
                 </div>
                 <div class="col mb-4 mb-lg-3">
                     <div class="card h-100">
-                        <img class="card-img-top" src="https://dummyimage.com/185x270/ced4da/6c757d.jpg"
-                            alt="..." />
+                        <a href="game.html">
+                            <img class="card-img-top" src="https://dummyimage.com/185x270/ced4da/6c757d.jpg"
+                                alt="Game Picture" />
+                        </a>
                         <div class="card-body p-2 pb-2">
                             <div class="text-center">
-                                <h5 class="card-title fw-bolder pb-0">Название игры</h5>
+                                <h5><a href="game.html" class="card-title fw-bolder pb-0 text-decoration-none">Название
+                                        игры</a></h5>
                                 <p class="card-text text-sm"><small class="text-muted">2013</small></p>
                             </div>
                         </div>
@@ -327,11 +368,14 @@
                 </div>
                 <div class="col mb-4 mb-lg-3">
                     <div class="card h-100">
-                        <img class="card-img-top" src="https://dummyimage.com/185x270/ced4da/6c757d.jpg"
-                            alt="..." />
+                        <a href="game.html">
+                            <img class="card-img-top" src="https://dummyimage.com/185x270/ced4da/6c757d.jpg"
+                                alt="Game Picture" />
+                        </a>
                         <div class="card-body p-2 pb-2">
                             <div class="text-center">
-                                <h5 class="card-title fw-bolder pb-0">Название игры</h5>
+                                <h5><a href="game.html" class="card-title fw-bolder pb-0 text-decoration-none">Название
+                                        игры</a></h5>
                                 <p class="card-text text-sm"><small class="text-muted">2013</small></p>
                             </div>
                         </div>
@@ -339,11 +383,14 @@
                 </div>
                 <div class="col mb-4 mb-lg-3">
                     <div class="card h-100">
-                        <img class="card-img-top" src="https://dummyimage.com/185x270/ced4da/6c757d.jpg"
-                            alt="..." />
+                        <a href="game.html">
+                            <img class="card-img-top" src="https://dummyimage.com/185x270/ced4da/6c757d.jpg"
+                                alt="Game Picture" />
+                        </a>
                         <div class="card-body p-2 pb-2">
                             <div class="text-center">
-                                <h5 class="card-title fw-bolder pb-0">Название игры</h5>
+                                <h5><a href="game.html" class="card-title fw-bolder pb-0 text-decoration-none">Название
+                                        игры</a></h5>
                                 <p class="card-text text-sm"><small class="text-muted">2013</small></p>
                             </div>
                         </div>
@@ -351,11 +398,14 @@
                 </div>
                 <div class="col mb-4 mb-lg-3">
                     <div class="card h-100">
-                        <img class="card-img-top" src="https://dummyimage.com/185x270/ced4da/6c757d.jpg"
-                            alt="..." />
+                        <a href="game.html">
+                            <img class="card-img-top" src="https://dummyimage.com/185x270/ced4da/6c757d.jpg"
+                                alt="Game Picture" />
+                        </a>
                         <div class="card-body p-2 pb-2">
                             <div class="text-center">
-                                <h5 class="card-title fw-bolder pb-0">Название игры</h5>
+                                <h5><a href="game.html" class="card-title fw-bolder pb-0 text-decoration-none">Название
+                                        игры</a></h5>
                                 <p class="card-text text-sm"><small class="text-muted">2013</small></p>
                             </div>
                         </div>
@@ -363,11 +413,14 @@
                 </div>
                 <div class="col mb-4 mb-lg-3">
                     <div class="card h-100">
-                        <img class="card-img-top" src="https://dummyimage.com/185x270/ced4da/6c757d.jpg"
-                            alt="..." />
+                        <a href="game.html">
+                            <img class="card-img-top" src="https://dummyimage.com/185x270/ced4da/6c757d.jpg"
+                                alt="Game Picture" />
+                        </a>
                         <div class="card-body p-2 pb-2">
                             <div class="text-center">
-                                <h5 class="card-title fw-bolder pb-0">Название игры</h5>
+                                <h5><a href="game.html" class="card-title fw-bolder pb-0 text-decoration-none">Название
+                                        игры</a></h5>
                                 <p class="card-text text-sm"><small class="text-muted">2013</small></p>
                             </div>
                         </div>
@@ -375,11 +428,14 @@
                 </div>
                 <div class="col mb-4 mb-lg-3">
                     <div class="card h-100">
-                        <img class="card-img-top" src="https://dummyimage.com/185x270/ced4da/6c757d.jpg"
-                            alt="..." />
+                        <a href="game.html">
+                            <img class="card-img-top" src="https://dummyimage.com/185x270/ced4da/6c757d.jpg"
+                                alt="Game Picture" />
+                        </a>
                         <div class="card-body p-2 pb-2">
                             <div class="text-center">
-                                <h5 class="card-title fw-bolder pb-0">Название игры</h5>
+                                <h5><a href="game.html" class="card-title fw-bolder pb-0 text-decoration-none">Название
+                                        игры</a></h5>
                                 <p class="card-text text-sm"><small class="text-muted">2013</small></p>
                             </div>
                         </div>
@@ -387,11 +443,14 @@
                 </div>
                 <div class="col mb-4 mb-lg-3">
                     <div class="card h-100">
-                        <img class="card-img-top" src="https://dummyimage.com/185x270/ced4da/6c757d.jpg"
-                            alt="..." />
+                        <a href="game.html">
+                            <img class="card-img-top" src="https://dummyimage.com/185x270/ced4da/6c757d.jpg"
+                                alt="Game Picture" />
+                        </a>
                         <div class="card-body p-2 pb-2">
                             <div class="text-center">
-                                <h5 class="card-title fw-bolder pb-0">Название игры</h5>
+                                <h5><a href="game.html" class="card-title fw-bolder pb-0 text-decoration-none">Название
+                                        игры</a></h5>
                                 <p class="card-text text-sm"><small class="text-muted">2013</small></p>
                             </div>
                         </div>

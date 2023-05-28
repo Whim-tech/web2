@@ -13,79 +13,49 @@
 <body>
     <!-- Header -->
     <header>
-
         <nav class="navbar navbar-expand navbar-dark bg-dark">
-
-            <div class="container-md px-4 px-lg-5">
+            <div class="container-md px-4 px-lg-5 ">
 
                 <!-- GameStore logo -->
-                <a class="navbar-brand " href="#!">
-                    <!-- <img src="https://cdn.icon-icons.com/icons2/1603/PNG/96/video-game-play-toad-mushroom-mario_108577.png" width="30" height="30" class="d-inline-block align-top" alt=""> -->
+                <a class="navbar-brand " href="/index.html">
                     Game Store
                 </a>
 
                 <!-- Menu options -->
                 <div class="navbar-collapse " id="navbarSupportedContent">
-
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0 d-none d-lg-flex">
-
                         <li class="nav-item active">
-                            <a class="nav-link" aria-current="page" href="#">Home</a>
+                            <a class="nav-link" aria-current="page" href="/index.html">Home</a>
                         </li>
-
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Catalog</a>
+                            <a class="nav-link" href="/catalog.html"> Catalog </a>
                         </li>
-
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Genres</a>
+                            <a class="nav-link" href="/catalog.html">Genres</a>
                         </li>
-
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Developers</a>
+                            <a class="nav-link" href="/catalog.html">Developers</a>
                         </li>
-
                     </ul>
                 </div>
 
                 <!-- Search -->
-
-                <form class="d-flex flex-row " method="get" action="#">
-
+                <form class="d-flex flex-row " method="get" action="/catalog.html">
                     <div class="input-group  ps-5 w-auto ">
                         <input type="search" id="form1" class="form-control" aria-label="Search" placeholder="Search"
                             name="q" />
                         <button type="submit"
                             class="btn btn-dark border d-flex align-items-center justify-content-center">
-
                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                                 class="bi bi-search" viewBox="0 0 16 16">
                                 <path
                                     d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
                             </svg>
-
                         </button>
                     </div>
-
                 </form>
-
             </div>
         </nav>
-
-        <!-- <div class="p-5 text-center bg-image" style="
-          background-image: url('https://mdbcdn.b-cdn.net/img/new/slides/041.webp');
-          height: 200px; ">
-                <div class="mask rounded-pill w-auto"  style="background-color: rgba(0, 0, 0, 0.6);">
-    
-                    <div class="d-flex justify-content-center align-items-center h-100">
-                        <div class="text-white">
-                            <h1 class="mb-3">КАТАЛОГ КОМПЬЮТЕРНЫХ ИГР</h1>
-                            <h4 class="mb-3">GAME STORE</h4>
-                        </div>
-                    </div>
-                </div>
-            </div> -->
-
     </header>
 
 
@@ -94,21 +64,22 @@
         <div class="container mt-2 ">
 
             <div class="row">
-
+                <!-- Game header -->
                 <header class="mb-4 order-1">
                     <!-- Post title-->
                     <h1 class="fw-bolder mb-1">The Elder Scrolls V: Legendary Edition</h1>
 
                     <!-- Post meta content-->
-                    <a class="text-muted  text-decoration-none mb-2 pe-3" href="#!">
+                    <a class="text-muted  text-decoration-none mb-2 pe-3" href="catalog.html?dev=TODO">
                         Bethesda Studio
                     </a>
 
                     <!-- Post categories-->
-                    <a class="badge bg-secondary text-decoration-none link-light" href="#!">РПГ</a>
-                    <a class="badge bg-secondary text-decoration-none link-light" href="#!">Песочница</a>
+                    <a class="badge bg-secondary text-decoration-none link-light" href="/catalog.html?genre=TODO">РПГ</a>
+                    <a class="badge bg-secondary text-decoration-none link-light" href="/catalog.html?genre=TODO">Песочница</a>
                 </header>
 
+                <!-- Main content-->
                 <div class="col-lg-8 col-md-8 order-3 order-lg-2 order-md-2">
                     <!-- Post content-->
                     <article>
@@ -179,16 +150,16 @@
                         <div class="card-body">
                             <h5 class="card-title fw-bolder">Genre</h5>
                             <div class="card-text" style="text-align: justify;"> <a
-                                    class="px-1 text-decoration-none link-blue" href="#!">РПГ</a>
-                                <a class="px-1 text-decoration-none link-blue" href="#!">Песочница</a>
-                                <a class="px-1 text-decoration-none link-blue" href="#!">MOBA</a>
+                                    class="px-1 text-decoration-none link-blue" href="/catalog.html?genre=TODO">РПГ</a>
+                                <a class="px-1 text-decoration-none link-blue" href="/catalog.html?genre=TODO">Песочница</a>
+                                <a class="px-1 text-decoration-none link-blue" href="/catalog.html?genre=TODO">MOBA</a>
                             </div>
                         </div>
 
                         <div class="card-body">
                             <h5 class="card-title fw-bolder">Developer</h5>
                             <div class="card-text" style="text-align: justify;"> <a
-                                    class="px-1 text-decoration-none link-blue" href="#!">Bethesda studio</a>
+                                    class="px-1 text-decoration-none link-blue" href="catalog.html?dev=TODO">Bethesda studio</a>
                             </div>
                         </div>
 
