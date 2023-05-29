@@ -32,7 +32,17 @@ if ($request_method === 'GET' && empty($query_params)) {
         echo json_encode(["error" => "game not found", "id" => $id]);
         exit();
     }
+    echo json_encode($result[0]);
+}else if ($request_method ==='GET' && isset($query_params['limit']) ){
+
+    $q = $query_params['q'] ?? '';
+    $limit = $query_params['limit'];
+    $offset = $query_params['offset'] ?? 0;
+    
+    $result = $developers->findLimit($limit, $offset, 'full_title', $q);
+
     echo json_encode($result);
+
 } else {
     http_response_code(400);
     $response = array("message" => "Unsupported request method or not correct query params");

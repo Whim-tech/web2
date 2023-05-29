@@ -7,7 +7,7 @@ use MongoDB\BSON\ObjectID;
 $request_method = $_SERVER['REQUEST_METHOD'];
 $query_params = $_GET;
 
-$developers = new MongoDBCollection($manager, 'developers');
+$developers = new MongoDBCollection($manager, 'platforms');
 header("Content-Type: application/json; charset=UTF-8");
 
 if ($request_method === 'GET' && empty($query_params)) {
@@ -29,7 +29,7 @@ if ($request_method === 'GET' && empty($query_params)) {
 
     if (count($result) == 0){
         header("HTTP/1.1 404 Not Found");
-        echo json_encode(["error" => "developer not found", "id" => $id]);
+        echo json_encode(["error" => "platform not found", "id" => $id]);
         exit();
     }
     echo json_encode($result[0]);

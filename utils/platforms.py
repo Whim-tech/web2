@@ -9,7 +9,7 @@ db = client['games']
 collection = db['platforms']
 
 platforms = []
-for i in range(10):
+for i in range(12):
     platform = {
         "name": f"платформа №{i+1}",
         "manufacturer": random.choice(["Microsoft", "Sony", "Nintendo"]),

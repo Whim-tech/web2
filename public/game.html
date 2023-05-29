@@ -4,9 +4,10 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap demo</title>
+    <title>GameStore</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link rel="icon" href="https://dummyimage.com/32x32/000000/000000.jpg">
 </head>
 
 
@@ -67,16 +68,17 @@
                 <!-- Game header -->
                 <header class="mb-4 order-1">
                     <!-- Post title-->
-                    <h1 class="fw-bolder mb-1">The Elder Scrolls V: Legendary Edition</h1>
+                    <h1 id="full_title" class="fw-bolder mb-1"></h1>
 
-                    <!-- Post meta content-->
-                    <a class="text-muted  text-decoration-none mb-2 pe-3" href="catalog.html?dev=TODO">
-                        Bethesda Studio
-                    </a>
+                    <div class="d-flex flex-row">
 
-                    <!-- Post categories-->
-                    <a class="badge bg-secondary text-decoration-none link-light" href="/catalog.html?genre=TODO">РПГ</a>
-                    <a class="badge bg-secondary text-decoration-none link-light" href="/catalog.html?genre=TODO">Песочница</a>
+                        <a class="dev_link text-muted  text-decoration-none pe-3" ></a>
+                        
+                        <div class="genres d-flex align-items-center">
+                            <a class="badge bg-secondary text-decoration-none link-light mx-1 " style="display: 'none';" ></a>
+                        </div>
+
+                    </div>
                 </header>
 
                 <!-- Main content-->
@@ -85,46 +87,15 @@
                     <article>
                         <!-- Post header Preview image figure-->
 
-                        <figure class="mb-4"><img class="img-fluid rounded"
+                        <figure class="mb-4"><img id="big_preview" class="img-fluid rounded"
                                 src="https://dummyimage.com/900x400/ced4da/6c757d.jpg" alt="..." /></figure>
 
                         <!-- Post content-->
-                        <section class="mb-5">
-                            <h2 class="fw-bolder mb-4 mt-5">Legendary Edition</h2>
-                            <p class="fs-5 mb-4" style="text-align: justify;">Империя Тамриэла находится на грани
-                                падения. Король Скайрима убит.
-                                Претенденты на трон объединяются в союзы. В разгар конфликта
-                                пробуждается гораздо более опасное, древнее зло. Драконы, долгое время не появлявшиеся в
-                                летописях, вернулись в Тамриэл. Будущее Скайрима и всей
-                                Империи висит на волоске, все ждут предсказанного Драконорожденного, героя с силой
-                                Голоса, единственного, кто сможет противостоять драконам.</p>
-
-                            <h2 class="fw-bolder mb-4 mt-5">Dragonborn</h2>
-                            <p class="fs-5 mb-4" style="text-align: justify;">В этом официальном дополнении к игре The
-                                Elder Scrolls V: Skyrim вы
-                                покинете берега Морровинда и отправитесь на остров Солстхейм.
-                                В путешествии по пустошам и ледниковым долинам вас ждут новые города, подземелья и
-                                задания. Ваш герой станет еще сильнее: теперь Крики помогут укрощать
-                                врагов и даже приручать драконов. Но ваша судьба и судьба всего Солстхейма окажется на
-                                волоске, когда вы встретите вашего злейшего врага - первого
-                                Драконорожденного.</p>
-                            <h2 class="fw-bolder mb-4 mt-5">Dawnguard</h2>
-                            <p class="fs-5 mb-4" style="text-align: justify;">Лорд-вампир Харкон вернулся к власти.
-                                Используя Древние Свитки, он
-                                намерен сделать немыслимое - погасить само солнце.
-                                Присоединитесь ли вы к древнему ордену Стерегущих Рассвет, чтобы остановить его? Или
-                                сами станете Лордом-вампиром? В Dawnguard этот выбор
-                                остается за вами.</p>
-
-                            <h2 class="fw-bolder mb-4 mt-5">Hearthfire</h2>
-                            <p class="fs-5 mb-4" style="text-align: justify;">Это официальное дополнение для игры The
-                                Elder Scrolls V: Skyrim
-                                позволит купить участок земли и построить собственный дом.
-                                Начните с простой хижины и превратите ее в огромный особняк с оружейной, алхимической
-                                лабораторией, конюшней, садом и другими строениями.
-                                Новые инструменты - чертежный стол и верстак - помогут изготавливать мебель из камня,
-                                глины и дерева. Вы можете даже усыновить ребенка, и пустое
-                                жилище превратится в настоящий уютный дом.</p>
+                        <section id="long_description" class="mb-5">
+                            <div>
+                                <h2 class="fw-bolder mb-4 mt-5"></h2>
+                                <p class="fs-5 mb-4" style="text-align: justify;"></p>
+                            </div>
                         </section>
 
                     </article>
@@ -136,30 +107,40 @@
 
 
                     <div class="card mb-4">
-                        <img class="card-img-top" src="https://dummyimage.com/440x220/ced4da/6c757d.png"
+                        <img id="small_preview" class="card-img-top" src="https://dummyimage.com/440x220/ced4da/6c757d.png"
                             alt="Card image cap">
 
                         <div class="card-body">
-                            <h5 class="card-title fw-bolder">The Elder Scrools V</h5>
-                            <p class="card-text" style="text-align: justify;">Империя Тамриэла находится на грани
-                                падения. Король Скайрима убит. Претенденты на трон объединяются в союзы. В разгар
-                                конфликта пробуждается гораздо более опасное, древнее зло. </p>
+                            <h5 id="short_title" class="card-title fw-bolder"></h5>
+                            <p id="short_description" class="card-text" style="text-align: justify;"></p>
 
                         </div>
 
                         <div class="card-body">
                             <h5 class="card-title fw-bolder">Genre</h5>
-                            <div class="card-text" style="text-align: justify;"> <a
-                                    class="px-1 text-decoration-none link-blue" href="/catalog.html?genre=TODO">РПГ</a>
-                                <a class="px-1 text-decoration-none link-blue" href="/catalog.html?genre=TODO">Песочница</a>
-                                <a class="px-1 text-decoration-none link-blue" href="/catalog.html?genre=TODO">MOBA</a>
+                            <div class="genres card-text d-flex" style="text-align: justify;"> 
+                                <a class="px-1 text-decoration-none link-blue" href="" style="display: none;"></a>
+                            </div>
+                        </div>
+
+                        <div class="card-body">
+                            <h5 class="card-title fw-bolder">Platforms</h5>
+                            <div class="platforms card-text d-flex" style="text-align: justify;"> 
+                                <a class="px-1 text-decoration-none link-blue" href="" style="display: none;"></a>
                             </div>
                         </div>
 
                         <div class="card-body">
                             <h5 class="card-title fw-bolder">Developer</h5>
                             <div class="card-text" style="text-align: justify;"> <a
-                                    class="px-1 text-decoration-none link-blue" href="catalog.html?dev=TODO">Bethesda studio</a>
+                                    class="dev_link px-1 text-decoration-none link-blue"></a>
+                            </div>
+                        </div>
+
+                        <div class="card-body">
+                            <h5 class="card-title fw-bolder">Publisher</h5>
+                            <div class="card-text" style="text-align: justify;"> <a
+                                    class="pub_link px-1 text-decoration-none link-blue"></a>
                             </div>
                         </div>
 
@@ -180,6 +161,8 @@
     <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
         crossorigin="anonymous"></script> -->
+
+    <script src="scripts/game.js"></script>
 </body>
 
 </body>

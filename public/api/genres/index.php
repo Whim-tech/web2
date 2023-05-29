@@ -32,7 +32,7 @@ if ($request_method === 'GET' && empty($query_params)) {
         echo json_encode(["error" => "genre not found", "id" => $id]);
         exit();
     }
-    echo json_encode($result);
+    echo json_encode($result[0]);
 } else {
     http_response_code(400);
     $response = array("message" => "Unsupported request method or not correct query params");

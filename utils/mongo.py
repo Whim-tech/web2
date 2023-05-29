@@ -23,3 +23,6 @@ collection.insert_many(publishers)
 
 # Закрываем соединение с MongoDB
 client.close()
+
+
+# db.games.updateMany({}, {$set: {image_preview: "https://dummyimage.com/185x270/ced4da/6c757d.jpg"}})

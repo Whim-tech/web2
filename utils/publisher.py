@@ -10,7 +10,7 @@ collection = db['publishers']
 
 # Генерируем данные
 publishers = []
-for i in range(1000):
+for i in range(24):
     publisher = {
         "name": f"Издательство №{i+1}",
         "country": random.choice(["Россия", "США", "Великобритания", "Япония", "Китай"]),

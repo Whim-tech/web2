@@ -43,6 +43,12 @@ class MongoDBCollection {
         
         return $cursor->toArray();
     }
+
+    public function findLimit($limit, $offset, $field, $q) {
+        $query = new MongoDB\Driver\Query([$field => ['$regex' => $q]], ['limit' => $limit, 'skip' => $offset]);
+        $cursor = $this->manager->executeQuery($this->collection, $query);
+        return $cursor->toArray();
+    }
 }
 
 

@@ -7,7 +7,7 @@ db = client['games']
 collection = db['developers']
 
 developers = []
-for i in range(1000):
+for i in range(24):
     developer = {
         "name": f"Разработчик №{i+1}",
         "country": random.choice(["Россия", "США", "Великобритания", "Япония", "Китай"]),
@@ -15,9 +15,6 @@ for i in range(1000):
         "website": f"https://example{i+1}.com"
     }
     developers.append(developer)
-
-with open("developers.json", "w", encoding='utf-8') as outfile:
-    json.dump(developers, outfile, indent=2, ensure_ascii=False)
 
 collection.insert_many(developers)
 
