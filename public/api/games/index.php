@@ -7,12 +7,12 @@ use MongoDB\BSON\ObjectID;
 $request_method = $_SERVER['REQUEST_METHOD'];
 $query_params = $_GET;
 
-$developers = new MongoDBCollection($manager, 'games');
+$games = new MongoDBCollection($manager, 'games');
 header("Content-Type: application/json; charset=UTF-8");
 
 if ($request_method === 'GET' && empty($query_params)) {
 
-    echo json_encode($developers->findAll());
+    echo json_encode($games->findAll());
 
 } else if ($request_method ==='GET' && isset($query_params['id'])){
 
@@ -25,7 +25,7 @@ if ($request_method === 'GET' && empty($query_params)) {
         exit();
     }
 
-    $result = $developers->find(['_id'  => ['$eq' =>$object_id]]);
+    $result = $games->find(['_id'  => ['$eq' =>$object_id]]);
 
     if (count($result) == 0){
         header("HTTP/1.1 404 Not Found");
@@ -39,7 +39,7 @@ if ($request_method === 'GET' && empty($query_params)) {
     $limit = $query_params['limit'];
     $offset = $query_params['offset'] ?? 0;
     
-    $result = $developers->findLimit($limit, $offset, 'full_title', $q);
+    $result = $games->findLimit($limit, $offset, 'full_title', $q);
 
     echo json_encode($result);
 

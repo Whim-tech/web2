@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>GameStore</title>
+    <link href="../styles/bootstrap-5.3.0.min.css" rel="stylesheet">
+    <link rel="icon" href="https://dummyimage.com/32x32/000000/000000.jpg">
+</head>
+
+
+<body>
+    <!-- Header -->
+    <header>
+        <nav class="navbar navbar-expand navbar-dark bg-dark">
+            <div class="container-md px-4 px-lg-5 ">
+
+                <!-- GameStore logo -->
+                <a class="navbar-brand " href="/index.html">
+                    Game Store
+                </a>
+
+                <!-- Menu options -->
+                <div class="navbar-collapse " id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 d-none d-lg-flex">
+                        <li class="nav-item active">
+                            <a class="nav-link" aria-current="page" href="/admin/panel.html">Admin panel</a>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </nav>
+    </header>
+
+
+    <!-- Content -->
+    <section id="content" class="py-5">
+
+        <div class="container-md px-4">
+
+            <h1 id="game_text">
+                
+            </h1>
+            <hr class="hr " />
+            <div class="d-flex justify-content-between mb-2">
+                <button class="btn btn-warning btn-large fw-bolder text-white" onclick="back()">
+                    BACK
+                </button>
+
+                <div>
+                    <button class="btn btn-success btn-large fw-bolder text-white me-2" onclick="update_game()">
+                        SAVE
+                    </button>
+                    <button class="btn btn-danger btn-large fw-bolder text-white " onclick="delete_game()">
+                        DELETE
+                    </button>
+                </div>
+
+            </div>
+            <div class="form-group">
+                <textarea class="form-control text-white bg-dark fs-6 lh-1 font-monospace" id="text" ></textarea>
+            </div>
+        </div>
+            
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-4 bg-dark">
+        <div class="container">
+            <p class="m-0 text-center text-white">Copyright &copy; Game Store 2023</p>
+        </div>
+    </footer>
+
+    <script src="../scripts/admin_panel/item.js"></script>
+
+</body>
+
+</html>

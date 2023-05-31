@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>GameStore</title>
+    <link href="../styles/bootstrap-5.3.0.min.css" rel="stylesheet">
+    <link rel="icon" href="https://dummyimage.com/32x32/000000/000000.jpg">
+</head>
+
+
+<body>
+    <!-- Header -->
+    <header>
+        <nav class="navbar navbar-expand navbar-dark bg-dark">
+            <div class="container-md px-4 px-lg-5 ">
+
+                <!-- GameStore logo -->
+                <a class="navbar-brand " href="/index.html">
+                    Game Store
+                </a>
+
+                <!-- Menu options -->
+                <div class="navbar-collapse " id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 d-none d-lg-flex">
+                        <li class="nav-item active">
+                            <a class="nav-link" aria-current="page" href="/admin/panel.html">Admin panel</a>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </nav>
+    </header>
+
+
+    <!-- Content -->
+    <section id="content" class="py-5">
+        <div class="container-md d-flex justify-content-center pb-2">
+            <h1>
+                Welcom to admin panel!
+
+            </h1>
+
+        </div>
+        <div class="container-md d-flex justify-content-center pb-2">
+            <h2>
+                List of games:
+            </h2>
+        </div>
+        <div class="container-md px-4 d-flex justify-content-between">
+            <button class="btn btn-info btn-large fw-bolder text-white me-4">
+                NEW
+            </button>
+            <form class="" method="get" action="#">
+                <div class="input-group   w-auto">
+                    <input type="search" id="form1" class="form-control" aria-label="Search" placeholder="ID игры"
+                    name="id" />
+                    <button type="submit" class="btn btn-dark border d-flex align-items-center justify-content-center">
+                        найти
+                    </button>
+                </div>
+            </form>
+        </div>
+
+
+        <div id="list" class="container px-4">
+
+            <a id="game_link" class="text-decoration-none mx-1">
+                <div class=" border d-flex justify-content-start align-items-center shadow text-black">
+                    <p id="game_id" class="fw-bolder text me-3"> ID</p>
+                    <p id="game_name" class=""> name </p>
+                </div>
+            </a>
+        </div>
+    </section>
+
+    <div id="error" class="container-md px-4 px-lg-5 py-4 my-5 justify-content-center bg-danger" style="display: none;">
+        <div class="container-md px-4 px-lg-5 py-4 my-5"></div>
+        <div class="container-md px-4 px-lg-5 py-4 my-5"></div>
+        <h1 class="text-center fw-bolder text-white "> ОШИБКА СЕРВЕРА </h1>
+        <div class="container-md px-4 px-lg-5 py-4 my-5"></div>
+        <div class="container-md px-4 px-lg-5 py-4 my-5"></div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="py-4 bg-dark">
+        <div class="container">
+            <p class="m-0 text-center text-white">Copyright &copy; Game Store 2023</p>
+        </div>
+    </footer>
+
+    <script src="../scripts/admin_panel/main.js"></script>
+
+</body>
+
+</html>

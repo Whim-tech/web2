@@ -49,6 +49,30 @@ class MongoDBCollection {
         $cursor = $this->manager->executeQuery($this->collection, $query);
         return $cursor->toArray();
     }
+
+    public function update($id, $new) {
+        $filter = ['_id' => $id];
+        $update = ['$set' => $new];
+        $options = ['multi' => false, 'upsert' => false];
+
+        $bulk = new MongoDB\Driver\BulkWrite;
+        $bulk->update($filter, $update, $options);
+
+        $result = $this->manager->executeBulkWrite($this->collection, $bulk);
+
+        return $result->getModifiedCount();
+    }
+
+    public function delete($id) {
+        $filter = ['_id' => $id];
+
+        $bulk = new MongoDB\Driver\BulkWrite;
+        $bulk->delete($filter);
+
+        $result = $this->manager->executeBulkWrite($this->collection, $bulk);
+
+        return $result->getModifiedCount();
+    }
 }
 
 

@@ -1,17 +1,3 @@
-//  TODO: if id is none => 404 redirect
-//  TODO: if id not found => 404 redirect
-
-//  TODO: add good genre rendering
-//  TODO: add good articles rendering
-//  TODO: add good platforms rendering
-// let new_genre = genre.cloneNode(true);
-// genre.after(new_genre);
-
-// TODO: get dev by http
-// TODO: get genres by http
-// TODO: get publisher by http
-// TODO: get platforms by http
-
 
 const params = new URLSearchParams(window.location.search);
 
