@@ -21,7 +21,7 @@ if (isset($query_params['id'])){
     $object_id = new ObjectID($id);
     
     $body = file_get_contents("php://input");
-    $newGame = json_decode($query_params['body']);
+    $newGame = json_decode(file_get_contents('php://input'));
     
     $result = $games->update($object_id, $newGame);
     echo json_encode($result);
