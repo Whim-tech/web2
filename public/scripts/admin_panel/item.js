@@ -39,12 +39,12 @@ function update_game(){
     let text = document.getElementById('game_text').textContent;
     let url = `/api/games/update?id=${game._id['$oid']}&body=${text}`
     fetch(
-        url
+        url)
     .then(response => {
         console.log(response.text());
         alert("Game updated!");
     })
-    .catch(error => console.log(error)));
+    .catch(error => console.log(error));
     
 }
 
