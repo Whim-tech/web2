@@ -1,12 +1,12 @@
 
 const params = new URLSearchParams(window.location.search);
 
-let id = params.get('id') || '';
-let url = `/api/games?id=${id}`
+let search_id = params.get('id') || '';
+let url = `/api/games?id=${search_id}`
 let game = null
 let game_json = null
 
-if (id === '') {
+if (search_id === '') {
     window.location.replace("/404.html");
 }
 
@@ -25,7 +25,7 @@ fetch(url)
         text.rows = lines_number;
         text.textContent = JSON.stringify(game, null, 2);
 
-        document.getElementById('game_text').textContent = `EDITING GAME: ID=${game._id['$oid']}`
+        document.getElementById('game_text').textContent = `EDITING GAME: ID=${search_id}`
     })
     .catch(error => {
         console.log(error);

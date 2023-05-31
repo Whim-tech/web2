@@ -73,6 +73,16 @@ class MongoDBCollection {
 
         return $result->getModifiedCount();
     }
+
+    public function create() {
+
+        $bulk = new MongoDB\Driver\BulkWrite;
+        $bulk->insert(['full_title' => 'Новая игра!']);
+        $id = $bulk->insert(['name' => 'Новая игра!']);
+        $this->manager->executeBulkWrite($this->collection, $bulk);
+
+        return $id;
+    }
 }
 
 
