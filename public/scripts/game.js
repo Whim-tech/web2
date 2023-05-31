@@ -112,9 +112,11 @@ fetch(url)
 
     let big_preview = document.getElementById('big_preview');
     big_preview.src = game.description.big_preview;
-
+    big_preview.alt = `${game.full_title} big preview image`;
+    
     let small_preview = document.getElementById('small_preview');
     small_preview.src = game.description.small_preview;
+    small_preview.alt = `${game.full_title} small preview image`;
 
     let short_description = document.getElementById('short_description');
     short_description.textContent = game.description.short_description;

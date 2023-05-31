@@ -17,32 +17,35 @@ fetch(url)
             return;
         }
 
-        let game_card = document.getElementById('catalog').children[0];
+        let catalog = document.getElementById('catalog');
 
-        for (let i = 0; i < games_len; i += 1) {
-            let new_card = game_card.cloneNode(true);
+        for (let i = 0; i < catalog.children.length; i += 1) {
+            let card = catalog.children[i];
 
+            if (i >= games_len) {
+                card.style.display = 'none';
+                continue;
+            }
 
-            let game = games[i];
+            const game = games[i];
             const link = `/game.html?id=${game._id['$oid']}`;
 
-            let age = game_card.querySelector('#card_age');
+            let age = card.querySelector('#card_age');
             age.textContent = game.release_date;
 
-            let title = game_card.querySelector('#card_full_title');
+            let title = card.querySelector('#card_full_title');
             title.href = link;
             title.textContent = game.short_title;
 
-            let img_link = game_card.querySelector('#card_img_link');
+            let img_link = card.querySelector('#card_img_link');
             img_link.href = link;
 
-            let img = game_card.querySelector('#card_img');
+            let img = card.querySelector('#card_img');
             img.src = game.image_preview;
+            img.alt = `${game.full_title} preview image`;
 
-            game_card.after(new_card);
-            game_card = new_card;
         }
-        game_card.style.display = 'none';
+
     }
     )
     .catch(error => {

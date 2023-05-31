@@ -27,6 +27,7 @@ services:
     environment:
       MONGO_INITDB_ROOT_USERNAME: root
       MONGO_INITDB_ROOT_PASSWORD: example
+      MONGO_INITDB_DATABASE: games
 
   mongo-express:
     image: mongo-express:latest
@@ -55,3 +56,12 @@ networks:
 
     # db.games.updateMany({}, {$set: {image_preview: "https://dummyimage.com/185x270/ced4da/6c757d.jpg"}});
     # ssh root@178.21.8.219
+
+    #  db.createUser({
+    # user: 'denis2',
+    # pwd: 'hello',
+    # roles: [
+    #     {"role": "clusterAdmin", "db": "admin" },
+    #     {"role": "readAnyDatabase", "db": "admin" },
+    # "readWrite"]
+    # });
