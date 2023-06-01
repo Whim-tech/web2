@@ -70,8 +70,9 @@ fetch(url)
     short_title.textContent = game.short_title;
 
     let dev_id = game.developer['$oid'];
+    if (dev_id !== undefined) {
 
-    fetch(`/api/developers?id=${dev_id}`)
+      fetch(`/api/developers?id=${dev_id}`)
       .then(response => response.json())
       .then(data => {
         dev = data
@@ -81,10 +82,12 @@ fetch(url)
           dev_link.href = `catalog.html?dev=${dev_id}`
         }
       })
+    }
 
     let pub_id = game.publisher['$oid'];
+    if(pub_id !== undefined) {
 
-    fetch(`/api/publishers?id=${pub_id}`)
+      fetch(`/api/publishers?id=${pub_id}`)
       .then(response => response.json())
       .then(data => {
         pub = data
@@ -94,6 +97,7 @@ fetch(url)
           pub_link.href = `catalog.html?pub=${dev_id}`
         }
       })
+    }
 
 
     let big_preview = document.getElementById('big_preview');
